@@ -208,12 +208,6 @@ public class RunGame
 			if (rd==1)
 				{
 					ArrayList<Integer> abilityScores = new ArrayList<Integer>();
-					abilityScores.add(new Integer(0));
-					abilityScores.add(new Integer(0));
-					abilityScores.add(new Integer(0));
-					abilityScores.add(new Integer(0));
-					abilityScores.add(new Integer(0));
-					abilityScores.add(new Integer(0));
 					for (int i=0; i<6; i++)
 						{
 							ArrayList<Integer> dieRoll = new ArrayList<Integer>();
@@ -229,8 +223,9 @@ public class RunGame
 								{
 									dieTotal=8;
 								}
-							
+							abilityScores.add(new Integer(dieTotal));
 						}
+					System.out.println("here are your six ability scores " + abilityScores.get(0) + " " + abilityScores.get(1) + " " + abilityScores.get(2) + " " + abilityScores.get(3) + " "  + abilityScores.get(4) + " " + abilityScores.get(5));
 				}
 			else
 				{
